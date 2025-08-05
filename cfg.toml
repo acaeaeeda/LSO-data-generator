@@ -1,0 +1,31 @@
+# 决定是添加食物的温度效果还是食物的水分
+# "temperature" -> 温度; "thirst" -> 水分
+mode = "thirst"
+
+# 定义食物温度相关内容
+
+# 温度的高低，正值表示热食/热饮，负值表示凉食/冷饮，其绝对值表示效果的等级
+temperature_level = 2
+
+# 效果持续时间 in tick 1s = 20ticks 1200ticks == 60s
+duration = 1200
+
+# 物品类型，决定是食物还是饮品
+# Accept: "FOOD"/"DRINK"
+group = "FOOD"
+
+
+
+# 定义食物水分相关内容
+
+# 类似于原版的饥饿值
+hydration = 4
+
+# 类似于原版的饱和度
+saturation = 2
+
+# 状态效果列表 e.g effects = ["modid:effect_id_1","modid:effect_id_2"]
+effects = []
+
+# 用于匹配 NBT
+properties = {}
